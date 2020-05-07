@@ -4,11 +4,12 @@
 
 // THEN a timer starts and I am presented with a question 
 // Create a timer
+
 // Create Variable to hold Score 
 
 // Link Event to start timer
 
-// Create Alert that generates first question
+// Create Prompt that generates first question
 
 // WHEN I answer a question 
 // Choice between true and false would be easy 
