@@ -7,21 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Question Test</title>
   <link rel="stylesheet" href="style.css">
+  <!-- <script src="jquery-3.4.1.min.js"></script> -->
 </head>
 
 <body>
-    <div class = 'container'> 
+    <div class = 'container'>
         <div id='questionsCon' class='hide'>
             <div id="question">Question</div>
-            <div id='time' class='hide'></div>
+            <div>Time Remaining <span id="time">02:00</span></div>
+            <div>Score<span id='score'></span></div>
             <div id="answer-buttons" class="btn-grid">
-                <button class='btn'>Choice 1</button>
-                <button class='btn'>Choice 2</button>
-                <button class='btn'>Choice 3</button>
-                <button class='btn'>Choice 4</button>
+                <button class='btn'>Answer 1</button>
+                <button class='btn'>Answer 2</button>
+                <button class='btn'>Answer 3</button>
+                <button class='btn'>Answer 4</button>
             </div>
-        </div>
-
+        </div> 
         <div id='choices'>
             <button id="start-btn" class='start-btn btn'>Start</button>
             <button id="next-btn" class='next-btn btn hide'>Next Question</button>
