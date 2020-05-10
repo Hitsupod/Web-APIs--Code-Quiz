@@ -71,6 +71,7 @@ function startTimer(duration, display) {
     }, 1000);
 }
 
+startButton.addEventListener('click',startGame);
 startButton.addEventListener("click", function() {
     var twoMinutes = 60 * 2,
         display = document.querySelector('#time');
@@ -89,8 +90,9 @@ function startGame() {
 
 }
 
-function showQuestion(question) {
-    questionElement.innerText = question.question
+function showQuestion(questions) {
+    questionElement.innerText = questions.question
+    console.log(questions)
     question.answers.forEach(answer => {
       const button = document.createElement('button')
       button.innerText = answer.text
@@ -122,7 +124,8 @@ function questionsloop(questions) {
         button.dataset.correct = answer.correct
         score ++;
     }
-    console.log(questions)
+    score.innerText('Correct')
+
 }
 
 // Next Questions 
